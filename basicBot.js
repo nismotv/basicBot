@@ -248,20 +248,20 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: 'basicBot',
+            botName: 'NismoBot',
             language: 'english',
             chatLink: 'https://raw.githack.com/NismoTV/basicBot/master/lang/en.json',
             scriptLink: 'https://raw.githack.com/NismoTV/basicBot/master/basicBot.js',
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 1, // 1-200
-            startupVolume: 0, // 0-100
+            startupCap: 3, // 1-200
+            startupVolume: 15, // 0-100
             startupEmoji: false, // true or false
             autowoot: true,
             autoskip: false,
             smartSkip: true,
             cmdDeletion: true,
             maximumAfk: 120,
-            afkRemoval: true,
+            afkRemoval: false,
             maximumDc: 60,
             bouncerPlus: true,
             blacklistEnabled: true,
@@ -295,7 +295,7 @@
             afkRankCheck: 'ambassador',
             motdEnabled: false,
             motdInterval: 5,
-            motd: 'Temporary Message of the Day',
+            motd: 'Keep creating!',
             filterChat: true,
             etaRestriction: false,
             welcome: true,
