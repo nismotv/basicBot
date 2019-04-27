@@ -1470,8 +1470,8 @@
             }, 60 * 60 * 1000);
             basicBot.loggedInID = API.getUser().id;
             basicBot.status = true;
-            API.sendChat('/cap ' + basicBot.settings.startupCap);
-            API.setVolume(basicBot.settings.startupVolume);
+            //API.sendChat('/cap ' + basicBot.settings.startupCap);
+            //API.setVolume(basicBot.settings.startupVolume);
             if (basicBot.settings.autowoot) {
                 $('#woot').click();
             }
@@ -1488,8 +1488,8 @@
                 }
                 API.chatLog('Emojis disabled.');
             }
-            API.chatLog('Avatars capped at ' + basicBot.settings.startupCap);
-            API.chatLog('Volume set to ' + basicBot.settings.startupVolume);
+            //API.chatLog('Avatars capped at ' + basicBot.settings.startupCap);
+            //API.chatLog('Volume set to ' + basicBot.settings.startupVolume);
             //socket();
             loadChat(API.sendChat(subChat(basicBot.chat.online, {
                 botname: basicBot.settings.botName
