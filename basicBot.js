@@ -253,8 +253,8 @@
             chatLink: 'https://raw.githack.com/NismoTV/basicBot/master/lang/en.json',
             scriptLink: 'https://raw.githack.com/NismoTV/basicBot/master/basicBot.js',
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 3, // 1-200
-            startupVolume: 20, // 0-100
+            startupCap: 10, // 1-200
+            startupVolume: 15, // 0-100
             startupEmoji: false, // true or false
             autowoot: true,
             autoskip: false,
