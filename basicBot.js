@@ -241,7 +241,7 @@
         name: 'basicBot',
         loggedInID: null,
         scriptLink: 'https://raw.githack.com/NismoTV/basicBot/master/basicBot.js',
-        cmdLink: 'http://git.io/245Ppg',
+        cmdLink: 'https://git.io/fjGvf',
         chatLink: 'https://raw.githack.com/NismoTV/basicBot/master/lang/en.json',
         chat: null,
         loadChat: loadChat,
