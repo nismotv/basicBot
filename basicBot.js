@@ -1,12 +1,3 @@
-/**
-
- Copyright © 2014-2018 basicBot
-
- Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
- This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
-
- */
-
 (function() {
 
     /*window.onerror = function() {
@@ -112,7 +103,7 @@
 
     var loadChat = function(cb) {
         if (!cb) cb = function() {};
-        $.get('https://raw.githack.com/basicBot/source/master/lang/langIndex.json', function(json) {
+        $.get('https://raw.githack.com/NismoTV/basicBot/master/lang/langIndex.json', function(json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== 'undefined') {
                 langIndex = json;
@@ -259,8 +250,8 @@
         settings: {
             botName: 'basicBot',
             language: 'english',
-            chatLink: 'https://raw.githack.com/basicBot/source/master/lang/en.json',
-            scriptLink: 'https://raw.githack.com/basicBot/source/master/basicBot.js',
+            chatLink: 'https://raw.githack.com/NismoTV/basicBot/master/lang/en.json',
+            scriptLink: 'https://raw.githack.com/NismoTV/basicBot/master/basicBot.js',
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
             startupVolume: 0, // 0-100
@@ -2744,7 +2735,7 @@
                         }));
                         var argument = msg.substring(cmd.length + 1);
 
-                        $.get('https://raw.githack.com/basicBot/source/master/lang/langIndex.json', function(json) {
+                        $.get('https://raw.githack.com/NismoTV/basicBot/master/lang/langIndex.json', function(json) {
                             var langIndex = json;
                             var link = langIndex[argument.toLowerCase()];
                             if (typeof link === 'undefined') {
@@ -3454,19 +3445,6 @@
                                 'function': basicBot.chat.songstats
                             }));
                         }
-                    }
-                }
-            },
-
-            sourceCommand: {
-                command: 'source',
-                rank: 'user',
-                type: 'exact',
-                functionality: function(chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void(0);
-                    else {
-                        API.sendChat('/me basicBot is an open-source bot for plug.dj. More info can be found here: https://github.com/basicBot/source');
                     }
                 }
             },
